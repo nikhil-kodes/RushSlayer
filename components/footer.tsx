@@ -15,7 +15,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="w-4 h-4" />
-              <span>Smart India Hackathon 2024</span>
+              <span>RushSlayer</span>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 RUSHSLAYER. Built for Smart India Hackathon. All rights reserved.</p>
+          <p>&copy; 2024 RUSHSLAYER. Built by team rm -rf. All rights reserved.</p>
         </div>
       </div>
     </footer>

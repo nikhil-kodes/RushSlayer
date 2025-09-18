@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import logo from "@/public/Copilot_20250910_131844-modified.png"
+import {motion} from "framer-motion"
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -24,7 +26,8 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background pt-5">
+      <motion.div initial={{y:20, opacity:0}} animate={{opacity:1, y:0}} transition={{duration:0.2}} className="absolute top-5 left-5 h-20 w-20"><img src={logo.src} className="h-full w-full rounded-full " /></motion.div>
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated grid pattern */}
         <div
@@ -118,7 +121,7 @@ export function HeroSection() {
             className="text-lg px-10 py-7 rounded-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             <Link href="/feedback">
-              Submit Feedback
+              Customer Feedback
               <span className="ml-2">→</span>
             </Link>
           </Button>
